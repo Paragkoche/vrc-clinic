@@ -1,0 +1,130 @@
+.head {
+  width: 100%;
+  position: relative;
+  z-index: 9999999;
+  .phone_menu {
+    transition: all 2s;
+    display: none;
+    width: 100vw;
+    height: 95vh;
+    background: #fdf4ea;
+    padding: 10px;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    li {
+      font-size: larger;
+    }
+  }
+  .navBar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20%;
+    .phone_button {
+      display: none;
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 20px;
+      // font-weight: bold;
+      li {
+        cursor: pointer;
+        font-size: 24px;
+      }
+    }
+  }
+}
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .head {
+    .phone_menu {
+      display: flex;
+    }
+    .navBar {
+      .logo {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      padding: 20px 10%;
+      justify-content: space-between;
+      .phone_button {
+        display: block;
+      }
+      .menu {
+        display: none;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .head {
+    .phone_menu {
+      display: flex;
+    }
+    .navBar {
+      .logo {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      padding: 20px 10%;
+      justify-content: space-between;
+      .phone_button {
+        display: block;
+      }
+      .menu {
+        display: none;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .head {
+    .phone_menu {
+      display: flex;
+    }
+    .navBar {
+      .logo {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      padding: 20px 10%;
+      justify-content: space-between;
+      .phone_button {
+        display: block;
+      }
+      .menu {
+        display: none;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .head {
+    .navBar {
+      padding: 20px 10%;
+    }
+  }
+}

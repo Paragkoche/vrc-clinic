@@ -1,0 +1,89 @@
+.footer {
+  width: 100%;
+  background-color: #00afb9;
+  padding: 20px 20%;
+  display: flex;
+  // flex-wrap: wrap;
+  .right,
+  .left {
+    width: 50%;
+    iframe {
+      border: 0;
+      width: 100%;
+      margin-top: 10px;
+    }
+    & > h1 {
+      font-size: larger;
+      color: white;
+    }
+    .container {
+      margin: 20px 0;
+      h2 {
+        font-size: medium;
+        color: #000;
+      }
+      p,
+      a {
+        margin-top: 10px;
+        font-size: small;
+        line-height: normal;
+        text-align: justify;
+        width: 75%;
+        color: #121212;
+      }
+    }
+  }
+}
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .footer {
+    .right,
+    .left {
+      width: inherit;
+      iframe {
+        width: 100%;
+      }
+      .container {
+        p,
+        a {
+          width: 100%;
+        }
+      }
+    }
+    flex-wrap: wrap;
+    padding: 20px 10%;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .footer {
+    .right,
+    .left {
+      width: inherit;
+      iframe {
+        width: 100%;
+      }
+      .container {
+        p,
+        a {
+          width: 100%;
+        }
+      }
+    }
+    flex-wrap: wrap;
+    padding: 20px 10%;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .footer {
+    flex-wrap: wrap;
+    padding: 20px 10%;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
